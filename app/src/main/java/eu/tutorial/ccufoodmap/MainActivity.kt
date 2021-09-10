@@ -15,10 +15,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // var for db
-        val filename=filesDir.toString()+"/foodList.db"
-        val tv_QueryResult = findViewById<TextView>(R.id.textview_query_result)
-        val btn_create_database_table = findViewById<Button>(R.id.button_create_database)
 
         //var for buttom nav bar
         val homeFragment :Fragment= HomeFragment()
@@ -38,6 +34,7 @@ class MainActivity : AppCompatActivity() {
             true
         }
     }
+
 
     private fun makeCurrentFragment(fragment: Fragment)=
         supportFragmentManager.beginTransaction().apply {
