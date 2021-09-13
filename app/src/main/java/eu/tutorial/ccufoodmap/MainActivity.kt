@@ -2,8 +2,8 @@ package eu.tutorial.ccufoodmap
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.TextView
+import android.os.PersistableBundle
+import android.widget.*
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import eu.tutorial.ccufoodmap.fragments.HomeFragment
@@ -44,4 +44,16 @@ class MainActivity : AppCompatActivity() {
             replace(R.id.fl_wrapper,fragment)
             commit()
         }
+    // LaLa's code
+    /*private var items : ArrayList<String> = ArrayList()
+    private lateinit var adapter: ArrayAdapter<String>
+
+    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
+        super.onCreate(savedInstanceState, persistentState)
+        setContentView(R.layout.activity_main)
+
+        title = "店家資訊"
+        adapter = ArrayAdapter(this,android.R.layout.Store_information, items)
+        ListView.adapter = adapter
+    }*/
 }
