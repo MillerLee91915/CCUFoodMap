@@ -15,8 +15,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        nav_bar_controller()
 
-        //var for buttom nav bar
+
+    }
+
+    private fun nav_bar_controller()
+    {
         val homeFragment :Fragment= HomeFragment()
         val listFragment :Fragment= ListFragment()
         val settingFragment :Fragment= SettingFragment()
@@ -34,8 +39,6 @@ class MainActivity : AppCompatActivity() {
             true
         }
     }
-
-
     private fun makeCurrentFragment(fragment: Fragment)=
         supportFragmentManager.beginTransaction().apply {
             replace(R.id.fl_wrapper,fragment)
