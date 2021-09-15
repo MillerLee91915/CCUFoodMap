@@ -4,6 +4,7 @@ import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 
+
 class MyDBHelper (context: Context) :
         SQLiteOpenHelper(context, name, null, version) {
 
@@ -21,4 +22,5 @@ class MyDBHelper (context: Context) :
                 val name = "mdatabase.db"
                 val version = 1
             }
+
         }
